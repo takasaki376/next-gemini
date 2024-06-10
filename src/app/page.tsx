@@ -26,9 +26,9 @@ export default function Home() {
 
   return (
     <section className="flex flex-col items-center gap-4 py-5 md:py-5">
-      <div>
+      {/* <div>
         <WeatherIcon />
-      </div>
+      </div> */}
       <div
         className={`${fontHeader.className} inline-block max-w-lg text-center justify-center`}
       >

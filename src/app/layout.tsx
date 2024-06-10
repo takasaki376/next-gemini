@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import { model_name } from "@/config/model";
 
 export const metadata: Metadata = {
   title: {
@@ -54,7 +55,7 @@ export default function RootLayout({
                 title="SamMwenda Github"
               >
                 <span className="text-default-600">Powered by</span>
-                <p className="text-danger">Gemini-1.5-pro-latest</p>
+                <p className="text-danger">{model_name}</p>
               </Link>
             </footer>
           </div>

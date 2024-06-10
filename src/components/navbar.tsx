@@ -21,26 +21,7 @@ export const Navbar = () => {
         <NavbarItem className="hidden sm:flex">
           <ThemeSwitch />
         </NavbarItem>
-        {/* <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            href="https://github.com/SamMwenda"
-            startContent={<GithubIcon className="text-default-500" />}
-            variant="flat"
-          >
-            Github
-          </Button>
-        </NavbarItem> */}
       </NavbarContent>
-
-      {/* <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-      </NavbarContent> */}
     </NextUINavbar>
   );
 };

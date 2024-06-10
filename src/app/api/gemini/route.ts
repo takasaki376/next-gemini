@@ -4,8 +4,10 @@ import {
   HarmCategory,
   HarmBlockThreshold,
 } from "@google/generative-ai";
+import { model_name } from "@/config/model";
 
-const MODEL_NAME = "gemini-1.5-pro-latest";
+// const MODEL_NAME = "models/gemini-1.5-pro-latest";
+const MODEL_NAME = model_name;
 const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY as string;
 
 export async function POST(request: NextRequest) {
@@ -53,7 +55,7 @@ export async function POST(request: NextRequest) {
     generationConfig,
     safetySettings,
   });
-
+  console.log(result);
   if (!result) {
     throw new Error("Failed to fetch data");
   }
