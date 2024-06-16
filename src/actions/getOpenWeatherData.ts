@@ -8,10 +8,10 @@ export const getOpenWeatherData = async ({
   if (!location) {
     throw new Error("Location is not defined");
   }
-  const URL = process.env.NEXT_PUBLIC_APP_URL;
+
   const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
   const data = await fetch(
-    `${URL}api/openweather?lat=${location.latitude}&lon=${location.longitude}&appid=${API_KEY}`
+    `/api/openweather?lat=${location.latitude}&lon=${location.longitude}&appid=${API_KEY}`
   );
 
   if (!data.ok) {

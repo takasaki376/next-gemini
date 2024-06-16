@@ -46,7 +46,8 @@ export async function POST(request: NextRequest) {
 
   const parts = [
     {
-      text: `Summarize a historical event that occurred. The date of the should be month: ${month} day:${date} year:any . Add an appropriate emoji before the event title and append the year the event  took place. Title must have a total of 47 characters﻿ and description a total of 158 characters. Append a link to a website further explaining the event. Separate the title, descrption and link with #. Reserve # for the separation of title,description and link.`,
+      // text: `Summarize a historical event that occurred. The date of the should be month: ${month} day:${date} year:any . Add an appropriate emoji before the event title and append the year the event  took place. Title must have a total of 47 characters﻿ and description a total of 158 characters. Append a link to a website further explaining the event. Separate the title, descrption and link with #. Reserve # for the separation of title,description and link.`,
+      text: `発生した歴史的イベントを要約します。日付は、${month}月${date}日とする必要があります。イベントのタイトルの前に適切な絵文字を追加し、イベントが発生した年を追加します。タイトルは合計 47 文字以下、説明は合計 360 文字以下にする必要があります。イベントをさらに説明する Web サイトへのリンクを追加します。タイトル、説明、リンクは # で区切ります。# は、タイトル、説明、リンクの区切りとして予約します。`,
     },
   ];
 
